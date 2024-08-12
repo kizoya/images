@@ -24,7 +24,7 @@ app.get('/img', async (req, res, next) => {
 });
 const fetchChapterData = async (endpoint) => {
   try {
-    const response = await axios.get(`https://cuy-api-roan.vercel.app/chapter/${endpoint}`);
+    const response = await axios.get(`https://kizoy.vercel.app/chapter/${endpoint}`);
     return response.data;
   } catch (error) {
     console.error('Terjadi kesalahan saat mengambil data chapter.:', error);
